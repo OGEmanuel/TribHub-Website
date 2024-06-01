@@ -1,11 +1,13 @@
 import UnionIcon from "@/components/icons/union-icon";
-import DesktopMockupLarge from "@/components/mockups/desktop-mockup-large";
-import DesktopMockupMid from "@/components/mockups/desktop-mockup-mid";
-import DesktopMockupSmall from "@/components/mockups/desktop-mockup-small";
-import MobileMockupLarge from "@/components/mockups/mobile-mockup-large";
-import MobileMockupMid from "@/components/mockups/mobile-mockup-mid";
-import MobileMockupSmall from "@/components/mockups/mobile-mockup-small";
+import desktopMockupLarge from "@/public/icons/desktop-mockup-large.svg";
+import desktopMockupMid from "@/public/icons/desktop-mockup-mid.svg";
+import desktopMockupSmall from "@/public/icons/desktop-mockup-small.svg";
+import mobileMockupSmall from "@/public/icons/mobile-mockup-small.svg";
+import mobileMockupLarge from "@/public/icons/mobile-mockup-large.svg";
+import mobileMockupMid from "@/public/icons/mobile-mockup-mid.svg";
+
 import { GeistSans } from "geist/font/sans";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -33,23 +35,25 @@ const Hero = () => {
         <UnionIcon />
       </div>
       <div className="absolute -right-32 top-8 max-[1220px]:-right-0 max-[1220px]:top-[29rem] md:-right-[24.1rem] 2xl:-right-60 min-[1700px]:right-10">
-        <div className="max-[1220px]:hidden">
-          <DesktopMockupLarge />
+        <div className="h-[43.75rem] w-[57.055rem] max-[1220px]:hidden">
+          <Image src={desktopMockupLarge} alt="Desktop Mockup Large" fill />
         </div>
-        <div className="hidden md:block min-[1221px]:hidden">
-          <DesktopMockupMid />
+        <div className="hidden h-[34.83rem] w-[45.4225rem] md:block min-[1221px]:hidden">
+          <Image src={desktopMockupMid} alt="Desktop Mockup Mid" fill />
         </div>
         <div className="absolute -right-36 md:hidden">
-          <DesktopMockupSmall />
-          <div className="absolute -left-12 top-[5.9rem] md:hidden">
-            <MobileMockupSmall />
+          <div className="h-[21.875rem] w-[28.5275rem]">
+            <Image src={desktopMockupSmall} alt="Desktop Mockup Small" fill />
+          </div>
+          <div className="absolute -left-12 top-[5.9rem] h-[25rem] w-[12.23125rem] md:hidden">
+            <Image src={mobileMockupSmall} alt="Mobile Mockup Small" fill />
           </div>
         </div>
-        <div className="absolute -left-[5.75rem] top-[11.8125rem] max-[1220px]:hidden">
-          <MobileMockupLarge />
+        <div className="absolute -left-[5.75rem] top-[11.8125rem] h-[50rem] w-[24.463125rem] max-[1220px]:hidden">
+          <Image src={mobileMockupLarge} alt="Mobile Mockup Large" fill />
         </div>
-        <div className="absolute -left-[5.75rem] top-[9.375rem] hidden md:block min-[1221px]:hidden">
-          <MobileMockupMid />
+        <div className="absolute -left-[5.75rem] top-[9.375rem] hidden h-[39.805625rem] w-[19.475rem] md:block min-[1221px]:hidden">
+          <Image src={mobileMockupMid} alt="Mobile Mockup Mid" fill />
         </div>
       </div>
     </section>
