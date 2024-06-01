@@ -36,24 +36,24 @@ const Hero = () => {
       </div>
       <div className="absolute -right-32 top-8 max-[1220px]:-right-0 max-[1220px]:top-[29rem] md:-right-[24.1rem] 2xl:-right-60 min-[1700px]:right-10">
         <div className="h-[43.75rem] w-[57.055rem] max-[1220px]:hidden">
-          <Image src={desktopMockupLarge} alt="Desktop Mockup Large" fill />
+          <Image src={desktopMockupLarge} alt="Desktop Mockup Large" placeholder="blur" fill />
         </div>
         <div className="hidden h-[34.83rem] w-[45.4225rem] md:block min-[1221px]:hidden">
-          <Image src={desktopMockupMid} alt="Desktop Mockup Mid" fill />
+          <Image src={desktopMockupMid} alt="Desktop Mockup Mid" placeholder="blur" fill />
         </div>
         <div className="absolute -right-36 md:hidden">
           <div className="h-[21.875rem] w-[28.5275rem]">
-            <Image src={desktopMockupSmall} alt="Desktop Mockup Small" fill />
+            <Image src={desktopMockupSmall} alt="Desktop Mockup Small" placeholder="blur" fill />
           </div>
           <div className="absolute -left-12 top-[5.9rem] h-[25rem] w-[12.23125rem] md:hidden">
-            <Image src={mobileMockupSmall} alt="Mobile Mockup Small" fill />
+            <Image src={mobileMockupSmall} alt="Mobile Mockup Small" placeholder="blur" fill />
           </div>
         </div>
         <div className="absolute -left-[5.75rem] top-[11.8125rem] h-[50rem] w-[24.463125rem] max-[1220px]:hidden">
-          <Image src={mobileMockupLarge} alt="Mobile Mockup Large" fill />
+          <Image src={mobileMockupLarge} alt="Mobile Mockup Large" placeholder="blur" fill />
         </div>
         <div className="absolute -left-[5.75rem] top-[9.375rem] hidden h-[39.805625rem] w-[19.475rem] md:block min-[1221px]:hidden">
-          <Image src={mobileMockupMid} alt="Mobile Mockup Mid" fill />
+          <Image src={mobileMockupMid} alt="Mobile Mockup Mid" placeholder="blur" fill />
         </div>
       </div>
     </section>

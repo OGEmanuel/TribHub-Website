@@ -24,10 +24,10 @@ const ThirdSection = () => {
           <UnionTwoIcon />
         </div>
         <div className="bg-banner absolute -bottom-60 left-[50%] h-[572.3px] w-[280px] -translate-x-[50%] min-[673px]:hidden">
-          <Image src={mobile} alt="mobile-banner" fill />
+          <Image src={mobile} alt="mobile-banner" placeholder="blur" fill />
         </div>
         <div className="bg-banner absolute -bottom-[18.5rem] left-[50%] hidden h-[798px] w-[603px] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden">
-          <Image src={tab} alt="tab-banner" fill />
+          <Image src={tab} alt="tab-banner" placeholder="blur" fill />
         </div>
         <div className="bg-banner absolute bottom-0 left-[50%] -translate-x-[50%] max-[1170px]:hidden">
           <DesktopMockupBanner />

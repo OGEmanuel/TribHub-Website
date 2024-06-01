@@ -5,6 +5,7 @@ import ThirdSection from "./third-section";
 import Banner from "./banner";
 
 export const metadata = {
+  title: "Welcome to TribHub!",
   description: "Manage and Grow your communities seamlessly",
   openGraph: {
     type: "website",
