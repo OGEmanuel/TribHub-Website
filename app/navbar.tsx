@@ -7,7 +7,7 @@ const Navbar = () => {
       <div
         className={`flex items-center gap-[10px] text-center text-xl font-semibold text-[#2A313F] ${GeistSans.className}`}
       >
-        <LogoIcon />
+        <LogoIcon width="28" height="28" fill="none" />
         <p>TribHub</p>
       </div>
       <button className="rounded-xl border !border-[#E0E1E3] bg-btn-gradient px-4 py-[10px] font-medium text-[#2A313F]">
