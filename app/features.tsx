@@ -11,8 +11,8 @@ const Features = () => {
             Elevating your community management experience
           </h3>
           <p className="text-sm text-[#616670] md:text-base">
-            We believe in growing together, which is why we're always updating
-            our features to better serve your needs.
+            We believe in growing together, which is why we&apos;re always
+            updating our features to better serve your needs.
           </p>
         </div>
         <div className="flex flex-col gap-6 px-4 md:px-16 2xl:px-[7.5rem]">
