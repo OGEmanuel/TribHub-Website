@@ -10,11 +10,11 @@ const ThirdSection = () => {
     <section className="relative px-4 pt-[6rem] md:px-16">
       <div className="mx-auto max-w-[32.125rem] text-center">
         <h3
-          className={`text-2xl font-medium md:text-[2.5rem] ${GeistSans.className}`}
+          className={`text-2xl font-medium leading-[29.76px] -tracking-[0.02em] md:text-[2.5rem] md:leading-[49.6px] ${GeistSans.className}`}
         >
           Ease online community management hassle
         </h3>
-        <p className="text-[#616670]">
+        <p className="leading-6 -tracking-[0.02em] text-[#616670] md:leading-7">
           Join thousands of creators to seamlessly manage, monetize, and protect
           your communities on WhatsApp, Telegram, and Facebook.
         </p>

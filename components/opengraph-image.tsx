@@ -12,6 +12,7 @@ export default async function OpengraphImage(
     ...{
       title: process.env.SITE_NAME,
     },
+
     ...props,
   };
 

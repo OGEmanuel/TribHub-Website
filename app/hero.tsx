@@ -18,11 +18,11 @@ const Hero = () => {
             V1 launches in August
           </span>
           <h1
-            className={`text-[2.5rem] font-medium leading-[54.56px] -tracking-[0.02em] text-[#1C2332] md:text-[2.75rem] ${GeistSans.className}`}
+            className={`text-[2.5rem] font-medium leading-[49.6px] -tracking-[0.02em] text-[#1C2332] md:text-[2.75rem] md:leading-[54.56px] ${GeistSans.className}`}
           >
             Manage and Grow your communities seamlessly
           </h1>
-          <p className="text-sm leading-[3rem] -tracking-[0.02em] text-[#616670] md:text-base">
+          <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
             Join thousands of creators to seamlessly manage, monetize, and
             protect your communities on WhatsApp, Telegram, and Facebook.
           </p>

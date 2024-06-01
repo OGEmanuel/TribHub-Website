@@ -6,11 +6,11 @@ const Features = () => {
       <div className="mx-auto max-w-[1708px]">
         <div className="mx-auto mb-12 max-w-[32.125rem] px-4 text-center md:px-0">
           <h3
-            className={`text-[1.75rem] font-medium leading-[49.6px] -tracking-[0.02em] md:text-[2.5rem] ${GeistSans.className}`}
+            className={`text-[1.75rem] font-medium leading-[34.72px] -tracking-[0.02em] md:text-[2.5rem] md:leading-[49.6px] ${GeistSans.className}`}
           >
             Elevating your community management experience
           </h3>
-          <p className="text-sm leading-[3rem] -tracking-[0.02em] text-[#616670] md:text-base">
+          <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
             We believe in growing together, which is why we&apos;re always
             updating our features to better serve your needs.
           </p>
@@ -19,11 +19,11 @@ const Features = () => {
           <div className="rounded-3xl bg-white p-6 md:p-10">
             <div className="mt-[16.25rem] max-w-[34.625rem]">
               <h4
-                className={`text-2xl font-medium leading-[34.72px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] ${GeistSans.className}`}
+                className={`text-2xl font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}
               >
                 Effortless community management
               </h4>
-              <p className="text-sm leading-[3rem] -tracking-[0.02em] text-[#616670] md:text-base">
+              <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
                 Say goodbye to manual tasks. TribHub automates invites, payment
                 processing, and member access, freeing up your time to focus on
                 creating and engaging with your community.
@@ -34,11 +34,11 @@ const Features = () => {
             <div className="rounded-3xl bg-white px-10 py-12">
               <div className="max-[1000px]:max-w-[34.625rem]">
                 <h4
-                  className={`pt-[17.5rem] text-2xl font-medium leading-[34.72px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] ${GeistSans.className}`}
+                  className={`pt-[17.5rem] text-2xl font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}
                 >
                   Protect your community resources{" "}
                 </h4>
-                <p className="text-sm leading-[3rem] -tracking-[0.02em] text-[#616670] md:text-base">
+                <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
                   Join thousands of creators and community builders to create,
                   maintain and secure your communities and resources.{" "}
                 </p>
@@ -47,11 +47,11 @@ const Features = () => {
             <div className="rounded-3xl bg-white px-6 py-12 md:px-10">
               <div className="max-[1000px]:max-w-[34.625rem]">
                 <h4
-                  className={`pt-[17.5rem] text-2xl font-medium leading-[34.72px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] ${GeistSans.className}`}
+                  className={`pt-[17.5rem] text-2xl font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}
                 >
                   Protect your community resources{" "}
                 </h4>
-                <p className="text-sm leading-[3rem] -tracking-[0.02em] text-[#616670] md:text-base">
+                <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
                   Join thousands of creators and community builders to create,
                   maintain and secure your communities and resources.
                 </p>
