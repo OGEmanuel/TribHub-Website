@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden pt-[5.333125rem] md:pt-[5.833125rem]">
       <Hero />
       <Flag />
       <Features />

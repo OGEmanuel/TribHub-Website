@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="mx-4 my-0.5 hidden border !border-[#E0E1E3] md:block"></div>
-          <p className="text-[#555A66]">All rights reserved @2024 Tribhub</p>
+          <p className="text-[#555A66] -tracking-[0.02em]">All rights reserved @2024 Tribhub</p>
         </div>
         <div className="flex items-center gap-6">
           <XIcon />

@@ -13,11 +13,11 @@ const Banner = () => {
         </div>
         <div className="mx-auto flex max-w-[32.125rem] flex-col gap-4 text-center">
           <h3
-            className={`text-[1.75rem] font-medium -tracking-[0.02em] md:text-[2.5rem] ${GeistSans.className}`}
+            className={`text-[1.75rem] font-medium leading-[49.6px] -tracking-[0.02em] md:text-[2.5rem] ${GeistSans.className}`}
           >
             Take your community to the next Level with Tribhub
           </h3>
-          <p className="text-sm text-[#616670] md:text-base">
+          <p className="text-sm leading-[3rem] -tracking-[0.02em] text-[#616670] md:text-base">
             Join thousands of creators to seamlessly manage, monetize, and
             protect your communities on WhatsApp, Telegram, and Facebook.
           </p>

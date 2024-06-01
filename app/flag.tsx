@@ -8,13 +8,13 @@ const Flag = () => {
           <div className="space-y-2">
             <p className="text-[#9CA4B6]">WHY TRIBHUB?</p>
             <h2
-              className={`max-w-[34.6875rem] text-[2rem] -tracking-[0.02em] text-white md:text-[2.75rem] ${GeistSans.className}`}
+              className={`max-w-[34.6875rem] text-[2rem] leading-[54.56px] -tracking-[0.02em] text-white md:text-[2.75rem] ${GeistSans.className}`}
             >
               We solve your community management challenges with ease
             </h2>
           </div>
           <p
-            className={`text-sm -tracking-[0.02em] text-[#B6BDCE] md:text-base`}
+            className={`text-sm leading-[3rem] -tracking-[0.02em] text-[#B6BDCE] md:text-base`}
           >
             TribHub makes managing your online communities on WhatsApp,
             Telegram, and Facebook easy by automating invites and payments,
