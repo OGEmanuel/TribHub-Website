@@ -7,6 +7,8 @@ import Banner from "./banner";
 export const metadata = {
   title: "Welcome to TribHub!",
   description: "Manage and Grow your communities seamlessly",
+  site_name: process.env.SITE_NAME,
+  url: process.env.TWITTER_SITE,
   openGraph: {
     type: "website",
   },
