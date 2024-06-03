@@ -1,9 +1,9 @@
 import { GeistSans } from "geist/font/sans";
-import mobile from "@/public/images/mobile-banner.png";
-import tab from "@/public/images/tab-banner.png";
+import mobile from "@/public/icons/mobile-mockup-banner.svg";
+import tab from "@/public/icons/tab-mockup-banner.svg";
 import Image from "next/image";
 import { UnionTwoIcon } from "@/components/icons/union-icon";
-import { DesktopMockupBanner } from "@/components/mockups/desktop-mockup-large";
+import desktopMockupBanner from "@/public/icons/desktop-mockup-banner.svg";
 
 const ThirdSection = () => {
   return (
@@ -23,14 +23,17 @@ const ThirdSection = () => {
         <div className="absolute">
           <UnionTwoIcon />
         </div>
-        <div className="bg-banner absolute -bottom-60 left-[50%] h-[572.3px] w-[280px] -translate-x-[50%] min-[673px]:hidden">
-          <Image src={mobile} alt="mobile-banner" placeholder="blur" fill />
+        <div className="bg-banner absolute -bottom-[7.5rem] left-[50%] z-40 h-[35.76875rem] w-[17.5rem] -translate-x-[50%] min-[673px]:hidden"></div>
+        <div className="bg-banner absolute -bottom-[7.5rem] left-[50%] h-[35.76875rem] w-[17.5rem] -translate-x-[50%] min-[673px]:hidden">
+          <Image src={mobile} alt="mobile-banner" fill />
         </div>
-        <div className="bg-banner absolute -bottom-[18.5rem] left-[50%] hidden h-[798px] w-[603px] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden">
-          <Image src={tab} alt="tab-banner" placeholder="blur" fill />
+        <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 hidden h-[49.875rem] w-[37.6875rem] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden"></div>
+        <div className="absolute -bottom-[10rem] left-[50%] hidden h-[49.875rem] w-[37.6875rem] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden">
+          <Image src={tab} alt="tab-banner" fill />
         </div>
-        <div className="bg-banner absolute bottom-0 left-[50%] -translate-x-[50%] max-[1170px]:hidden">
-          <DesktopMockupBanner />
+        <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 h-[47.925rem] w-[62.5rem] -translate-x-[50%] max-[1170px]:hidden"></div>
+        <div className="absolute -bottom-[10rem] left-[50%] h-[47.925rem] w-[62.5rem] -translate-x-[50%] max-[1170px]:hidden">
+          <Image src={desktopMockupBanner} alt="desktop-banner" fill />
         </div>
       </div>
     </section>

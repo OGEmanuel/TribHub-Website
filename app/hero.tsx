@@ -14,7 +14,7 @@ const Hero = () => {
     <section className="relative mx-auto max-w-[1708px] pt-12 md:pt-[7.5rem]">
       <div className="mx-4 max-w-[32.125rem] space-y-4 md:ml-16 md:mr-0 2xl:ml-[7.5rem]">
         <div className="space-y-2">
-          <span className="rounded-[1.875rem] border !border-[#ECECEE] px-4 py-2 text-sm font-medium -tracking-[0.02em] text-[#2A313F] md:text-base">
+          <span className="rounded-[1.875rem] border !border-[#ECECEE] px-4 py-2 text-sm font-medium -tracking-[0.02em] text-[#2A313F] md:text-base bg-white">
             V1 launches in August
           </span>
           <h1
