@@ -1,9 +1,12 @@
 import { GeistSans } from "geist/font/sans";
 import file from "@/public/icons/file-icon.svg";
 import chart from "@/public/icons/chart-icon.svg";
+import smallChart from "@/public/icons/chart-small-icon.svg";
 import Image from "next/image";
 import ArrowDownIcon from "@/components/icons/arrow-down-icon";
 import businessCard1 from "@/public/icons/business-card-1.svg";
+import smallBusinessCard1 from "@/public/icons/business-card-small-1.svg";
+import smallBusinessCard3 from "@/public/icons/business-card-small-3.svg";
 import businessCard3 from "@/public/icons/business-card-3.svg";
 import BusinessCard from "@/components/business-card";
 
@@ -24,23 +27,41 @@ const Features = () => {
         </div>
         <div className="flex flex-col gap-6 px-4 md:px-16 2xl:px-[7.5rem]">
           <div className="relative flex overflow-hidden rounded-3xl border border-[#E0E1E3] bg-white p-6 md:p-10">
-            <div className="absolute right-0 top-0 h-full w-[50.125rem]">
+            <div className="absolute right-0 top-0 h-[16.8175rem] w-[31.5875rem] md:h-[23rem] md:w-[50.125rem] lg:h-full">
               <div className="absolute h-full w-full">
-                <div className="bg-card absolute z-40 h-full w-full"></div>
-                <div className="absolute left-5 top-4 z-0">
-                  <Image src={businessCard1} alt="business-card-1" />
+                <div className="md:bg-card bg-small-card absolute z-40 h-full w-full"></div>
+                <div className="absolute left-24 top-4 z-0 md:left-5 md:top-0 lg:top-4">
+                  <Image
+                    src={businessCard1}
+                    alt="business-card-1"
+                    className="hidden md:block"
+                  />
+                  <Image
+                    src={smallBusinessCard1}
+                    alt="business-card-1"
+                    className="md:hidden"
+                  />
                 </div>
-                <div className="absolute left-[50%] top-[50%] z-50 translate-x-[-40%] translate-y-[-47%]">
+                <div className="absolute left-[50%] top-[50%] z-50 translate-x-[-5%] translate-y-[-38%] md:translate-x-[-40%] md:translate-y-[-47%]">
                   <BusinessCard />
                 </div>
-                <div className="absolute bottom-10 right-6">
-                  <Image src={businessCard3} alt="business-card-3" />
+                <div className="absolute -right-16 bottom-6 md:bottom-10 md:right-6">
+                  <Image
+                    src={businessCard3}
+                    alt="business-card-3"
+                    className="hidden md:block"
+                  />
+                  <Image
+                    src={smallBusinessCard3}
+                    alt="business-card-3"
+                    className="md:hidden"
+                  />
                 </div>
               </div>
             </div>
             <div className="z-50 mt-[15rem] max-w-[34.625rem]">
               <h4
-                className={`text-2xl font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}
+                className={`text-xl font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-2xl md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}
               >
                 Effortless community management
               </h4>
@@ -65,16 +86,16 @@ const Features = () => {
                     Protect your community resources{" "}
                   </h4>
                   <p className="text-sm leading-6 -tracking-[0.02em] text-[#E0E1E3] md:text-base md:leading-7">
-                    Safeguard your community's valuable resources and ensure
-                    that only members have access to shared content.{" "}
+                    Safeguard your community&apos;s valuable resources and
+                    ensure that only members have access to shared content.{" "}
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-3xl border border-[#E0E1E3] bg-white">
-              <div className="absolute left-12 top-12">
+              <div className="absolute left-6 top-6 md:left-12 md:top-12">
                 <p
-                  className={`text-[2rem] font-bold -tracking-[0.02em] ${GeistSans.className}`}
+                  className={`text-2xl font-bold -tracking-[0.02em] md:text-[2rem] ${GeistSans.className}`}
                 >
                   $151,234.40
                 </p>
@@ -87,16 +108,28 @@ const Features = () => {
                   </span>
                 </div>
               </div>
-              <div className="h-[17rem] w-full overflow-hidden">
-                <Image src={chart} alt="chart-icon" className="w-full" />
+              <div className="h-[13rem] w-full overflow-hidden min-[500px]:h-[17rem] min-[600px]:h-[20rem] min-[700px]:h-[22rem] md:h-[17rem] min-[1300px]:h-[19rem] 2xl:h-[22rem]">
+                <div className="absolute right-0 translate-y-10">
+                  <div className="hidden min-[390px]:block">
+                    <Image src={chart} alt="chart-icon" className="w-full" />
+                  </div>
+                  <div className="relative shadow-[inset_-0.5px_-0.5px_0px_0px_rgba(0,0,0,0.2),inset_0.5px_0.5px_0px_0px_rgba(255,255,255,0.25)] min-[390px]:hidden">
+                    <div className="bg-chart absolute bottom-0 h-full w-full"></div>
+                    <Image
+                      src={smallChart}
+                      alt="chart-icon"
+                      className="w-full"
+                    />
+                  </div>
+                </div>
               </div>
-              <div className="px-12 pb-12 max-[1000px]:max-w-[34.625rem]">
+              <div className="flex flex-col px-6 pb-6 max-[1000px]:max-w-[34.625rem] md:px-12 md:pb-12">
                 <h4
-                  className={`text-2xl font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}
+                  className={`z-20 text-lg font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-2xl md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}
                 >
                   Track sales and community growth{" "}
                 </h4>
-                <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
+                <p className="z-20 text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
                   Join thousands of creators and community builders to create,
                   maintain and secure your communities and resources.
                 </p>
