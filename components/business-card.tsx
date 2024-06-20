@@ -19,7 +19,7 @@ const BusinessCard = () => {
         </div>
         <div className="relative h-[2.520625rem] w-[2.520625rem] md:h-16 md:w-16">
           <Image src={gamer} alt="gamer" fill className="rounded-full" />
-          <div className="absolute left-[50%] top-[50%] z-50 h-[3.9rem] w-[3.9rem] translate-x-[-50.2%] translate-y-[-49.5%] rounded-full border border-white"></div>
+          <div className="absolute left-[50%] top-[50%] z-50 h-[2.4rem] w-[2.4rem] translate-x-[-50.2%] translate-y-[-49.5%] rounded-full border border-white md:h-[3.9rem] md:w-[3.9rem]"></div>
         </div>
       </div>
       <div className="flex items-center justify-between border-b border-dashed border-[#E0E1E3] px-[7.56px] pb-[7.56px] pt-3 md:px-3 md:pb-3 md:pt-5">
