@@ -69,7 +69,7 @@ export function WaitlistDialog() {
         Join waitlist
         <span className="sr-only">Join waitlist</span>
       </DialogTrigger>
-      <DialogContent className="flex flex-col gap-6 sm:max-w-[425px]">
+      <DialogContent className="flex h-full flex-col items-center justify-center gap-6 sm:max-w-[425px]">
         <DialogHeader className="items-center justify-center space-y-3">
           <LogoIcon width="28" height="28" fill="none" />
           <DialogTitle
