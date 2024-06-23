@@ -3,12 +3,13 @@ import file from "@/public/icons/file-icon.svg";
 import chart from "@/public/icons/chart-icon.svg";
 import smallChart from "@/public/icons/chart-small-icon.svg";
 import Image from "next/image";
+import gamer from "@/public/images/gamer.png";
+import suit from "@/public/images/suit.jpeg";
 import ArrowDownIcon from "@/components/icons/arrow-down-icon";
-import businessCard1 from "@/public/icons/business-card-1.svg";
-import smallBusinessCard1 from "@/public/icons/business-card-small-1.svg";
-import smallBusinessCard3 from "@/public/icons/business-card-small-3.svg";
-import businessCard3 from "@/public/icons/business-card-3.svg";
 import BusinessCard from "@/components/business-card";
+import WhatsappIcon from "@/components/icons/whatsapp-icon";
+import WhatsappSmallIcon from "@/components/icons/whatsapp-small-icon";
+import TelegramIcon from "@/components/icons/telegram-icon";
 
 const Features = () => {
   return (
@@ -30,31 +31,43 @@ const Features = () => {
             <div className="absolute right-0 top-0 h-[16.8175rem] w-[31.5875rem] md:h-[23rem] md:w-[50.125rem] lg:h-full">
               <div className="absolute h-full w-full">
                 <div className="md:bg-card bg-small-card absolute z-40 h-full w-full"></div>
-                <div className="absolute left-24 top-4 z-0 md:left-5 md:top-0 lg:top-4">
-                  <Image
-                    src={businessCard1}
-                    alt="business-card-1"
-                    className="hidden md:block"
-                  />
-                  <Image
-                    src={smallBusinessCard1}
-                    alt="business-card-1"
-                    className="md:hidden"
+                <div className="absolute left-24 top-12 z-0 md:left-5 md:top-[4rem] lg:top-[4.3rem]">
+                  <BusinessCard
+                    className="shadow-none md:shadow-none"
+                    src={suit}
+                    name={"Business-Crib Masterminds"}
+                    revenue={"$151,234.40"}
+                    resources={"4"}
+                    percent={"+40%"}
+                    members={"400"}
+                    icon={<TelegramIcon />}
+                    smallIcon={<TelegramIcon />}
                   />
                 </div>
-                <div className="absolute left-[50%] top-[50%] z-50 translate-x-[-5%] translate-y-[-38%] md:translate-x-[-40%] md:translate-y-[-47%]">
-                  <BusinessCard />
-                </div>
-                <div className="absolute -right-16 bottom-6 md:bottom-10 md:right-6">
-                  <Image
-                    src={businessCard3}
-                    alt="business-card-3"
-                    className="hidden md:block"
+                <div className="absolute left-[50%] top-[50%] z-[80] translate-x-[-5%] translate-y-[-38%] md:translate-x-[-40%] md:translate-y-[-47%]">
+                  <BusinessCard
+                    src={gamer}
+                    name={"Apex Gamers Club"}
+                    revenue={"$5,446.70"}
+                    resources={"4"}
+                    percent={"+20%"}
+                    members={"82"}
+                    icon={<WhatsappIcon />}
+                    smallIcon={<WhatsappSmallIcon />}
                   />
-                  <Image
-                    src={smallBusinessCard3}
-                    alt="business-card-3"
-                    className="md:hidden"
+                </div>
+                <div className="absolute -right-16 bottom-6 md:bottom-5 md:right-6">
+                  <BusinessCard
+                    className="shadow-none md:w-[18rem] md:shadow-none"
+                    src={gamer}
+                    name={"Apex Gamers Club"}
+                    revenue={"$24,131.53"}
+                    resources={"6"}
+                    percent={"+12.3%"}
+                    members={"243"}
+                    icon={<WhatsappIcon />}
+                    smallIcon={<WhatsappSmallIcon />}
+                    smallCard
                   />
                 </div>
               </div>

@@ -25,15 +25,21 @@ const ThirdSection = () => {
         </div>
         <div className="bg-banner absolute -bottom-[7.5rem] left-[50%] z-40 h-[35.76875rem] w-[17.5rem] -translate-x-[50%] min-[673px]:hidden"></div>
         <div className="bg-banner absolute -bottom-[7.5rem] left-[50%] h-[35.76875rem] w-[17.5rem] -translate-x-[50%] min-[673px]:hidden">
-          <Image src={mobile} alt="mobile-banner" fill />
+          <Image src={mobile} alt="mobile-banner" fill priority quality={100} />
         </div>
         <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 hidden h-[49.875rem] w-[37.6875rem] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden"></div>
         <div className="absolute -bottom-[10rem] left-[50%] hidden h-[49.875rem] w-[37.6875rem] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden">
-          <Image src={tab} alt="tab-banner" fill />
+          <Image src={tab} alt="tab-banner" fill priority quality={100} />
         </div>
         <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 h-[47.925rem] w-[62.5rem] -translate-x-[50%] max-[1170px]:hidden"></div>
         <div className="absolute -bottom-[10rem] left-[50%] h-[47.925rem] w-[62.5rem] -translate-x-[50%] max-[1170px]:hidden">
-          <Image src={desktopMockupBanner} alt="desktop-banner" fill />
+          <Image
+            src={desktopMockupBanner}
+            alt="desktop-banner"
+            fill
+            priority
+            quality={100}
+          />
         </div>
       </div>
     </section>
