@@ -1,10 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar";
+import { url } from "inspector";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// HEAD - metadata setting
 export const metadata = {
   metadataBase: new URL("https://trib-hub-website.vercel.app/"),
   title: "Tribhub",
@@ -22,7 +22,18 @@ export const metadata = {
     },
   },
   openGraph: {
-    images: "/og-image.png",
+    type: "website", // Ensure the type is defined
+    title: "Tribhub",
+    description: "Manage and Grow your communities seamlessly",
+    url: "https://trib-hub-website.vercel.app/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200, // Use recommended dimensions for large format
+        height: 630,
+        alt: "Tribhub Open Graph Image",
+      },
+    ],
   },
 };
 
