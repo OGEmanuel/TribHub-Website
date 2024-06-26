@@ -1,6 +1,6 @@
 import { GeistSans } from "geist/font/sans";
 import file from "@/public/images/file.png";
-import chart from "@/public/icons/chart-icon.svg";
+import chart from "@/public/images/chart.png";
 import Image from "next/image";
 import gamer from "@/public/images/gamer.png";
 import suit from "@/public/images/suit.jpeg";
@@ -128,7 +128,7 @@ const Features = () => {
               </div>
               <div className="w-full">
                 <div className="w-full">
-                  <div className="relative -mb-28 flex h-[19.875rem] w-full items-end justify-end sm:-mb-10">
+                  <div className="flex h-[19.875rem] w-full items-end justify-end">
                     <Image src={chart} alt="chart-icon" fill />
                   </div>
                 </div>
