@@ -50,7 +50,7 @@ const Join = () => {
   return (
     <section className="max-h-[calc(100vh-4.25rem)] w-full">
       {success && (
-        <div className="absolute h-full w-full">
+        <div className="absolute z-[400] h-screen w-screen">
           <Lottie animationData={animationData} autoplay={true} />{" "}
         </div>
       )}
@@ -115,7 +115,7 @@ const Join = () => {
         ) : (
           <Link
             href={"/"}
-            className="mx-auto w-max bg-white font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white"
+            className="z-[500] mx-auto w-max rounded-xl bg-white px-4 py-[14.2px] font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white"
           >
             Close
           </Link>
