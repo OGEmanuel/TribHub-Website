@@ -26,6 +26,8 @@ import LogoIcon from "./icons/logo-icon";
 import { GeistSans } from "geist/font/sans";
 import { useState } from "react";
 import { useFormTriggerStore } from "@/store/form-trigger";
+import Lottie from "lottie-react";
+import animationData from "@/animation.json";
 
 const FormSchema = z.object({
   firstname: z.string().min(2, {
@@ -69,6 +71,11 @@ export function WaitlistDialog() {
         <span className="sr-only">Join waitlist</span>
       </DialogTrigger>
       <DialogContent className="flex h-full flex-col items-center justify-center gap-6 sm:max-w-[425px]">
+        {success && (
+          <div className="absolute h-screen w-screen">
+            <Lottie animationData={animationData} autoplay={true} />{" "}
+          </div>
+        )}
         <DialogHeader className="items-center justify-center space-y-3">
           <LogoIcon width="28" height="28" fill="none" />
           <DialogTitle
@@ -131,7 +138,7 @@ export function WaitlistDialog() {
             <Button
               type="button"
               onClick={() => setSuccess(!success)}
-              className="w-full bg-white font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white"
+              className="z-[400] mx-auto w-max bg-white font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white"
             >
               Close
             </Button>

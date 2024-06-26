@@ -17,6 +17,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import Lottie from "lottie-react";
+import animationData from "@/animation.json";
 
 const FormSchema = z.object({
   firstname: z.string().min(2, {
@@ -54,72 +56,79 @@ const Join = () => {
     // });
   }
   return (
-    <section className="mx-auto flex h-screen max-w-[390px] flex-col items-center justify-center gap-6 px-4">
-      <div className="flex flex-col items-center justify-center space-y-3">
-        <LogoIcon width="28" height="28" fill="none" />
-        <h1
-          className={`text-[1.75rem] -tracking-[0.02em] text-[#2A313F] ${GeistSans.className}`}
-        >
-          {success ? "Thanks for joining!" : "Join and Stay Tuned!"}
-        </h1>
-        <p className="text-center text-sm leading-6 -tracking-[0.02em] text-[#555A66]">
-          {success
-            ? `We are happy to have you on board! Your journey to seamless community management begins here. Keep an eye on your inbox for an invitation to join our circle of community builders. We'll explore new features, share thoughts, and grow together. Welcome to the TribHub family!`
-            : "On joining the waitlist, we will send you an invite to join our circle of talented community builders like you."}
-        </p>
-      </div>
-      {!success ? (
-        <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="w-full space-y-6"
-          >
-            <FormField
-              control={form.control}
-              name="firstname"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>First name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Enter first name" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email address</FormLabel>
-                  <FormControl>
-                    <Input
-                      placeholder="Enter email address"
-                      {...field}
-                      type="email"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button
-              type="submit"
-              className={`w-full font-medium -tracking-[0.02em] ${formState.isValid ? "shadow-[0px_8px_8px_0px_#0065FF1A,_0px_8px_24px_0px_#0065FF1A]" : "shadow-none"}`}
-            >
-              Join waitlist
-            </Button>
-          </form>
-        </Form>
-      ) : (
-        <Link
-          href={"/"}
-          className="mx-auto w-max bg-white font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white"
-        >
-          Close
-        </Link>
+    <section className="max-h-[calc(100vh-4.25rem)] w-full">
+      {success && (
+        <div className="absolute h-full w-full">
+          <Lottie animationData={animationData} autoplay={true} />{" "}
+        </div>
       )}
+      <div className="relative mx-auto flex h-[calc(100vh-4.25rem)] max-w-[390px] flex-col items-center justify-center gap-6 px-4">
+        <div className="flex flex-col items-center justify-center space-y-3">
+          <LogoIcon width="28" height="28" fill="none" />
+          <h1
+            className={`text-[1.75rem] -tracking-[0.02em] text-[#2A313F] ${GeistSans.className}`}
+          >
+            {success ? "Thanks for joining!" : "Join and Stay Tuned!"}
+          </h1>
+          <p className="text-center text-sm leading-6 -tracking-[0.02em] text-[#555A66]">
+            {success
+              ? `We are happy to have you on board! Your journey to seamless community management begins here. Keep an eye on your inbox for an invitation to join our circle of community builders. We'll explore new features, share thoughts, and grow together. Welcome to the TribHub family!`
+              : "On joining the waitlist, we will send you an invite to join our circle of talented community builders like you."}
+          </p>
+        </div>
+        {!success ? (
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="w-full space-y-6"
+            >
+              <FormField
+                control={form.control}
+                name="firstname"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>First name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Enter first name" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Email address</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="Enter email address"
+                        {...field}
+                        type="email"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <Button
+                type="submit"
+                className={`w-full font-medium -tracking-[0.02em] ${formState.isValid ? "shadow-[0px_8px_8px_0px_#0065FF1A,_0px_8px_24px_0px_#0065FF1A]" : "shadow-none"}`}
+              >
+                Join waitlist
+              </Button>
+            </form>
+          </Form>
+        ) : (
+          <Link
+            href={"/"}
+            className="mx-auto w-max bg-white font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white"
+          >
+            Close
+          </Link>
+        )}
+      </div>
     </section>
   );
 };

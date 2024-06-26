@@ -26,7 +26,7 @@ const DialogOverlay = React.forwardRef<
       filter: "blur(12px)", // Fallback
     }}
     className={cn(
-      "fixed inset-0 z-[120] bg-white/80 backdrop-blur-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
+      "b fixed inset-0 z-[120] bg-white/80 backdrop-blur-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
       className,
     )}
     {...props}

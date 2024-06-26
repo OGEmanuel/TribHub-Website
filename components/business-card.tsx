@@ -33,7 +33,7 @@ const BusinessCard = ({
   return (
     <div
       className={cn(
-        "borde relative w-[14.17875rem] rounded-[10px] border-[#E0E1E3] bg-white shadow-[0px_18.28px_39.7px_0px_#767B7F1A,_0px_72.47px_72.47px_0px_#767B7F17,_0px_163.22px_97.68px_0px_#767B7F0D,_0px_289.88px_115.95px_0px_#767B7F03,_0px_452.47px_126.67px_0px_#767B7F00] sm:w-[18rem] md:rounded-2xl lg:w-[22.5rem] lg:shadow-[0px_29px_63px_0px_#767B7F1A,_0px_115px_115px_0px_#767B7F17,_0px_259px_155px_0px_#767B7F0D,_0px_460px_184px_0px_#767B7F03,_0px_718px_201px_0px_#767B7F00]",
+        "relative w-[14.17875rem] rounded-[10px] border border-[#E0E1E3] bg-white shadow-[0px_18.28px_39.7px_0px_#767B7F1A,_0px_72.47px_72.47px_0px_#767B7F17,_0px_163.22px_97.68px_0px_#767B7F0D,_0px_289.88px_115.95px_0px_#767B7F03,_0px_452.47px_126.67px_0px_#767B7F00] sm:w-[18rem] md:rounded-2xl lg:w-[22.5rem] lg:shadow-[0px_29px_63px_0px_#767B7F1A,_0px_115px_115px_0px_#767B7F17,_0px_259px_155px_0px_#767B7F0D,_0px_460px_184px_0px_#767B7F03,_0px_718px_201px_0px_#767B7F00]",
         className,
       )}
     >

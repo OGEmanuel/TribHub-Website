@@ -1,10 +1,18 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar";
+import { Metadata, Viewport } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
+export const metadata: Metadata = {
   metadataBase: new URL("https://trib-hub-website.vercel.app/"),
   title: "Tribhub",
   description: "Manage and Grow your communities seamlessly",
