@@ -1,12 +1,12 @@
 "use client";
 
 import UnionIcon from "@/components/icons/union-icon";
-import desktopMockupLarge from "@/public/icons/desktop-mockup-large.svg";
-import desktopMockupMid from "@/public/icons/desktop-mockup-mid.svg";
-import desktopMockupSmall from "@/public/icons/desktop-mockup-small.svg";
-import mobileMockupSmall from "@/public/icons/mobile-mockup-small.svg";
-import mobileMockupLarge from "@/public/icons/mobile-mockup-large.svg";
-import mobileMockupMid from "@/public/icons/mobile-mockup-mid.svg";
+import desktopMockupLarge from "@/public/images/desktop-mockup-large.png";
+import desktopMockupMid from "@/public/images/desktop-mockup-mid.png";
+import desktopMockupSmall from "@/public/images/desktop-mockup-small.png";
+import mobileMockupSmall from "@/public/images/mobile-mockup-small.png";
+import mobileMockupLarge from "@/public/images/mobile-mockup-large.png";
+import mobileMockupMid from "@/public/images/mobile-mockup-mid.png";
 import { GeistSans } from "geist/font/sans";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -51,6 +51,8 @@ const Hero = () => {
             alt="Desktop Mockup Large"
             fill
             priority
+            placeholder="blur"
+            className="rounded-[3rem]"
           />
         </div>
         <div className="hidden h-[34.83rem] w-[45.4225rem] sm:block lg:hidden">
@@ -59,7 +61,8 @@ const Hero = () => {
             alt="Desktop Mockup Mid"
             fill
             priority
-            quality={100}
+            placeholder="blur"
+            className="rounded-[2.5rem]"
           />
         </div>
         <div className="absolute -right-36 sm:hidden">
@@ -69,7 +72,8 @@ const Hero = () => {
               alt="Desktop Mockup Small"
               fill
               priority
-              quality={100}
+              placeholder="blur"
+              className="rounded-[1.5rem]"
             />
           </div>
           <div className="absolute -left-12 top-[5.9rem] h-[25rem] w-[12.23125rem] sm:hidden">
@@ -78,7 +82,8 @@ const Hero = () => {
               alt="Mobile Mockup Small"
               fill
               priority
-              quality={100}
+              placeholder="blur"
+              className="rounded-[2rem]"
             />
           </div>
         </div>
@@ -88,7 +93,8 @@ const Hero = () => {
             alt="Mobile Mockup Large"
             fill
             priority
-            quality={100}
+            placeholder="blur"
+            className="rounded-[4.3rem]"
           />
         </div>
         <div className="absolute -left-[5.75rem] top-[9.375rem] hidden h-[39.805625rem] w-[19.475rem] sm:block lg:hidden">
@@ -97,7 +103,8 @@ const Hero = () => {
             alt="Mobile Mockup Mid"
             fill
             priority
-            quality={100}
+            placeholder="blur"
+            className="rounded-[2.8rem]"
           />
         </div>
       </div>

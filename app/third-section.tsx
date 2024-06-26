@@ -26,10 +26,22 @@ const ThirdSection = () => {
           </div>
           <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 h-[47.925rem] w-[62.5rem] -translate-x-[50%] lg:block"></div>
           <div className="absolute bottom-0 left-[50%] w-full max-w-[17.5rem] -translate-x-[50%] sm:hidden">
-            <Image src={mobile} alt="mobile-banner" priority quality={100} />
+            <Image
+              src={mobile}
+              alt="mobile-banner"
+              priority
+              quality={100}
+              style={{ imageRendering: "auto" }}
+            />
           </div>
           <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[37.6875rem] -translate-x-[48.5%] sm:max-lg:block">
-            <Image src={tab} alt="tab-banner" priority quality={100} />
+            <Image
+              src={tab}
+              alt="tab-banner"
+              priority
+              quality={100}
+              style={{ imageRendering: "auto" }}
+            />
           </div>
           <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[62.5rem] -translate-x-[50%] lg:block">
             <Image
@@ -37,6 +49,7 @@ const ThirdSection = () => {
               alt="desktop-banner"
               priority
               quality={100}
+              style={{ imageRendering: "auto" }}
             />
           </div>
         </div>

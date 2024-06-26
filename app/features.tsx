@@ -1,5 +1,5 @@
 import { GeistSans } from "geist/font/sans";
-import file from "@/public/icons/file-icon.svg";
+import file from "@/public/images/file.png";
 import chart from "@/public/icons/chart-icon.svg";
 import Image from "next/image";
 import gamer from "@/public/images/gamer.png";
@@ -93,7 +93,7 @@ const Features = () => {
           </div>
           <div className="flex flex-col gap-6 lg:flex-row">
             <div className="flex flex-col justify-end rounded-3xl bg-[#2B7FFF]">
-              <div className="relative w-full">
+              <div className="relative left-[50%] w-full max-w-[32rem] -translate-x-[50%] 2xl:max-w-[40rem]">
                 <div className="bg-file absolute bottom-0 h-full w-full"></div>
                 <Image src={file} alt="file-icon" className="w-full" />
               </div>
