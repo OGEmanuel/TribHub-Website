@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar";
-import { url } from "inspector";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,14 +21,14 @@ export const metadata = {
     },
   },
   openGraph: {
-    type: "website", // Ensure the type is defined
+    type: "website",
     title: "Tribhub",
     description: "Manage and Grow your communities seamlessly",
     url: "https://trib-hub-website.vercel.app/",
     images: [
       {
         url: "/og-image.png",
-        width: 1200, // Use recommended dimensions for large format
+        width: 1200,
         height: 630,
         alt: "Tribhub Open Graph Image",
       },

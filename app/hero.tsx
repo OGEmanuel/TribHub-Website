@@ -11,6 +11,7 @@ import { GeistSans } from "geist/font/sans";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useFormTriggerStore } from "@/store/form-trigger";
+import Link from "next/link";
 
 const Hero = () => {
   const { setOpen } = useFormTriggerStore();
@@ -35,16 +36,22 @@ const Hero = () => {
           </div>
           <Button
             onClick={() => setOpen(true)}
-            className="font-medium -tracking-[0.02em]"
+            className="hidden font-medium -tracking-[0.02em] sm:block"
           >
             Join waitlist
           </Button>
+          <Link
+            href={"/join"}
+            className="block w-max rounded-xl bg-[#0065FF] px-4 py-[14.5px] font-medium -tracking-[0.02em] text-white shadow-[0px_8px_8px_0px_#0065FF1A,_0px_8px_24px_0px_#0065FF1A] hover:bg-[#0065FF]/90 sm:hidden"
+          >
+            Join waitlist
+          </Link>
         </div>
       </div>
       <div className="absolute -left-96 top-1 -z-50">
         <UnionIcon />
       </div>
-      <div className="absolute right-0 top-[28rem] sm:-right-[12rem] sm:top-[22rem] md:-right-[7.5rem] md:top-[27rem] lg:-right-[35rem] lg:top-0 xl:-right-[24.2rem] 2xl:-right-[15rem]">
+      <div className="absolute right-0 top-[28rem] sm:-right-[12rem] sm:top-[22rem] md:-right-[7.5rem] md:top-[27rem] lg:-right-[35rem] lg:top-0 xl:-right-[24.2rem] 2xl:-right-[10rem]">
         <div className="hidden h-[43.75rem] w-[57.055rem] lg:block">
           <Image
             src={desktopMockupLarge}
