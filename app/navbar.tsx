@@ -5,7 +5,7 @@ import { GeistSans } from "geist/font/sans";
 const Navbar = () => {
   return (
     <nav className="fixed z-[100] w-full bg-white px-4 py-5 md:px-16 md:py-6 2xl:px-[7.5rem]">
-      <div className="mx-auto flex w-full max-w-[1708px] items-center justify-between">
+      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between">
         <div
           className={`flex items-center gap-[10px] text-center text-xl font-semibold text-[#2A313F] ${GeistSans.className}`}
         >

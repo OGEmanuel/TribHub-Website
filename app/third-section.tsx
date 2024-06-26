@@ -19,27 +19,26 @@ const ThirdSection = () => {
           your communities on WhatsApp, Telegram, and Facebook.
         </p>
       </div>
-      <div className="relative mx-auto h-[25rem] max-w-[75rem] translate-y-14 overflow-hidden rounded-[3rem] bg-[#1C2332] min-[674px]:h-[35.8125rem] md:translate-y-20">
-        <div className="absolute">
-          <UnionTwoIcon />
-        </div>
-        <div className="bg-banner absolute -bottom-[7.5rem] left-[50%] z-40 h-[35.76875rem] w-[17.5rem] -translate-x-[50%] min-[673px]:hidden"></div>
-        <div className="bg-banner absolute -bottom-[7.5rem] left-[50%] h-[35.76875rem] w-[17.5rem] -translate-x-[50%] min-[673px]:hidden">
-          <Image src={mobile} alt="mobile-banner" fill priority quality={100} />
-        </div>
-        <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 hidden h-[49.875rem] w-[37.6875rem] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden"></div>
-        <div className="absolute -bottom-[10rem] left-[50%] hidden h-[49.875rem] w-[37.6875rem] -translate-x-[50%] min-[674px]:block min-[1171px]:hidden">
-          <Image src={tab} alt="tab-banner" fill priority quality={100} />
-        </div>
-        <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 h-[47.925rem] w-[62.5rem] -translate-x-[50%] max-[1170px]:hidden"></div>
-        <div className="absolute -bottom-[10rem] left-[50%] h-[47.925rem] w-[62.5rem] -translate-x-[50%] max-[1170px]:hidden">
-          <Image
-            src={desktopMockupBanner}
-            alt="desktop-banner"
-            fill
-            priority
-            quality={100}
-          />
+      <div className="flex items-center justify-center 2xl:px-[3.25rem]">
+        <div className="relative h-[25rem] w-full max-w-[1440px] translate-y-14 overflow-hidden rounded-[3rem] bg-[#1C2332] sm:h-[35.8125rem] md:translate-y-20">
+          <div className="absolute left-[50%] -translate-x-[50%]">
+            <UnionTwoIcon />
+          </div>
+          <div className="bg-banner absolute -bottom-[10rem] left-[50%] z-40 h-[47.925rem] w-[62.5rem] -translate-x-[50%] lg:block"></div>
+          <div className="absolute bottom-0 left-[50%] w-full max-w-[17.5rem] -translate-x-[50%] sm:hidden">
+            <Image src={mobile} alt="mobile-banner" priority quality={100} />
+          </div>
+          <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[37.6875rem] -translate-x-[48.5%] sm:max-lg:block">
+            <Image src={tab} alt="tab-banner" priority quality={100} />
+          </div>
+          <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[62.5rem] -translate-x-[50%] lg:block">
+            <Image
+              src={desktopMockupBanner}
+              alt="desktop-banner"
+              priority
+              quality={100}
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,6 @@ import Flag from "./flag";
 import Features from "./features";
 import ThirdSection from "./third-section";
 import Banner from "./banner";
-import { Toast } from "@/components/ui/toast";
 
 export const metadata = {
   title: "Welcome to TribHub!",
