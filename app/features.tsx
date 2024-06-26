@@ -93,11 +93,10 @@ const Features = () => {
           </div>
           <div className="flex flex-col gap-6 lg:flex-row">
             <div className="flex flex-col justify-end rounded-3xl bg-[#2B7FFF]">
-              <div className="relative left-[50%] w-full max-w-[32rem] -translate-x-[50%] 2xl:max-w-[40rem]">
-                <div className="bg-file absolute bottom-0 h-full w-full"></div>
+              <div className="relative left-[50%] w-full max-w-[32rem] -translate-x-[50%] overflow-hidden 2xl:max-w-[40rem]">
                 <Image src={file} alt="file-icon" className="w-full" />
               </div>
-              <div className="z-40 max-[1000px]:max-w-[34.625rem]">
+              <div className="relative z-40 overflow-hidden max-[1000px]:max-w-[34.625rem]">
                 <div className="px-6 pb-6 max-[280px]:px-4 md:px-12 md:pb-12">
                   <h4
                     className={`text-lg font-medium leading-[29.76px] -tracking-[0.02em] text-white md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}

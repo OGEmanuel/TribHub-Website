@@ -9,9 +9,6 @@
     rgba(28, 35, 50, 0.2) 100%
   );
 }
-.bg-file {
-  background: linear-gradient(180deg, rgba(43, 127, 255, 0) 64%, #2b7fff 100%);
-}
 
 .bg-card {
   background: linear-gradient(

@@ -1,9 +1,9 @@
 import { GeistSans } from "geist/font/sans";
-import mobile from "@/public/icons/mobile-mockup-banner.svg";
-import tab from "@/public/icons/tab-mockup-banner.svg";
+import mobile from "@/public/images/mobile-mockup-banner.png";
+import tab from "@/public/images/tab-mockup-banner.png";
 import Image from "next/image";
 import { UnionTwoIcon } from "@/components/icons/union-icon";
-import desktopMockupBanner from "@/public/icons/desktop-mockup-banner.svg";
+import desktopMockupBanner from "@/public/images/desktop-mockup-banner.png";
 
 const ThirdSection = () => {
   return (
@@ -29,27 +29,24 @@ const ThirdSection = () => {
             <Image
               src={mobile}
               alt="mobile-banner"
-              priority
-              quality={100}
-              style={{ imageRendering: "auto" }}
+              placeholder="blur"
+              className="rounded-t-[3rem]"
             />
           </div>
           <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[37.6875rem] -translate-x-[48.5%] sm:max-lg:block">
             <Image
               src={tab}
               alt="tab-banner"
-              priority
-              quality={100}
-              style={{ imageRendering: "auto" }}
+              placeholder="blur"
+              className="rounded-t-[2.5rem]"
             />
           </div>
           <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[62.5rem] -translate-x-[50%] lg:block">
             <Image
               src={desktopMockupBanner}
               alt="desktop-banner"
-              priority
-              quality={100}
-              style={{ imageRendering: "auto" }}
+              placeholder="blur"
+              className="rounded-t-[3rem]"
             />
           </div>
         </div>
