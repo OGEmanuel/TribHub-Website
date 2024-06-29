@@ -18,8 +18,8 @@ const Banner = () => {
             Take your community to the next Level with Tribhub
           </h3>
           <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
-            Join thousands of creators to seamlessly manage, monetize, and
-            protect your communities on WhatsApp, Telegram, and Facebook.
+            Seamlessly manage, monetize, and protect your communities on
+            WhatsApp, Telegram, and Facebook.
           </p>
         </div>
       </div>
