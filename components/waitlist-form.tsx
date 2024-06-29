@@ -82,7 +82,7 @@ export function WaitlistDialog() {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger className="rounded-xl border !border-[#E0E1E3] bg-btn-gradient px-4 py-[10px] font-medium -tracking-[0.02em] text-[#2A313F]">
+      <DialogTrigger onClick={() => setSuccess(false)} className="rounded-xl border !border-[#E0E1E3] bg-btn-gradient px-4 py-[10px] font-medium -tracking-[0.02em] text-[#2A313F]">
         Join waitlist
         <span className="sr-only">Join waitlist</span>
       </DialogTrigger>

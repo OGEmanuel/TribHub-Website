@@ -16,6 +16,10 @@ import Link from "next/link";
 const Hero = () => {
   const { setOpen, setSuccess } = useFormTriggerStore();
 
+  const handleClick = () => {
+    setOpen(true), setSuccess(false);
+  };
+
   return (
     <section className="relative pt-12 md:pt-[7.5rem]">
       <div className="mx-auto max-w-[1440px]">
@@ -44,6 +48,7 @@ const Hero = () => {
           </Button>
           <Link
             href={"/join"}
+            onClick={() => setSuccess(false)}
             className="block w-max rounded-xl bg-[#0065FF] px-4 py-[14.5px] font-medium -tracking-[0.02em] text-white shadow-[0px_8px_8px_0px_#0065FF1A,_0px_8px_24px_0px_#0065FF1A] hover:bg-[#0065FF]/90 sm:hidden"
           >
             Join waitlist

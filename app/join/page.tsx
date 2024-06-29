@@ -33,7 +33,7 @@ const FormSchema = z.object({
 });
 
 const Join = () => {
-    const { success, setSuccess } = useFormTriggerStore();
+  const { success, setSuccess } = useFormTriggerStore();
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -75,12 +75,14 @@ const Join = () => {
   return (
     <section className="relative h-screen w-screen">
       {success && (
-        <Lottie
-          animationData={animationData}
-          autoplay={true}
-          loop={false}
-          className="absolute h-full w-full"
-        />
+        <div className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center">
+          <Lottie
+            animationData={animationData}
+            autoplay={true}
+            loop={false}
+            className="absolute h-[920px] w-[920px]"
+          />
+        </div>
       )}
       <div className="max-h-[calc(100vh-4.25rem)] w-full">
         <div className="mx-auto flex h-[calc(100vh-4.25rem)] max-w-[390px] flex-col items-center justify-center gap-6 px-4">
