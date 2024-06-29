@@ -8,7 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const { setSuccess } = useFormTriggerStore();
+  const { setSuccess, setIndex } = useFormTriggerStore();
   const pathname = usePathname();
 
   return (
@@ -27,7 +27,9 @@ const Navbar = () => {
         {pathname !== "/join" && (
           <Link
             href={"/join"}
-            onClick={() => setSuccess(false)}
+            onClick={() => {
+              setSuccess(false), setIndex(0);
+            }}
             className="rounded-xl border !border-[#E0E1E3] bg-btn-gradient px-4 py-[10px] font-medium -tracking-[0.02em] text-[#2A313F] sm:hidden"
           >
             Join waitlist

@@ -41,8 +41,8 @@ const FormSchema = z.object({
 });
 
 export function WaitlistDialog() {
-  const { open, setOpen, success, setSuccess } = useFormTriggerStore();
-  const [index, setIndex] = useState(0);
+  const { open, setOpen, success, setSuccess, setIndex, index } =
+    useFormTriggerStore();
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -82,13 +82,18 @@ export function WaitlistDialog() {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger onClick={() => setSuccess(false)} className="rounded-xl border !border-[#E0E1E3] bg-btn-gradient px-4 py-[10px] font-medium -tracking-[0.02em] text-[#2A313F]">
+      <DialogTrigger
+        onClick={() => {
+          setSuccess(false), setIndex(0);
+        }}
+        className="rounded-xl border !border-[#E0E1E3] bg-btn-gradient px-4 py-[10px] font-medium -tracking-[0.02em] text-[#2A313F]"
+      >
         Join waitlist
         <span className="sr-only">Join waitlist</span>
       </DialogTrigger>
       <DialogContent className="flex h-full flex-col items-center justify-center gap-6 sm:max-w-[425px]">
         {success && (
-          <div className="absolute h-screen w-screen">
+          <div className="absolute left-[50%] top-[50%] h-screen w-screen -translate-x-[50%] -translate-y-[80%]">
             <Lottie
               animationData={animationData}
               loop={false}
@@ -157,6 +162,7 @@ export function WaitlistDialog() {
           <DialogClose asChild>
             <Button
               type="button"
+              onClick={() => setIndex(0)}
               className={`mx-auto w-full bg-white font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white ${index > 0 && "z-[400]"}`}
             >
               Close

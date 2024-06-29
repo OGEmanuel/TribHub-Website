@@ -33,8 +33,7 @@ const FormSchema = z.object({
 });
 
 const Join = () => {
-  const { success, setSuccess } = useFormTriggerStore();
-  const [index, setIndex] = useState(0);
+  const { success, setSuccess, index, setIndex } = useFormTriggerStore();
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const form = useForm<z.infer<typeof FormSchema>>({

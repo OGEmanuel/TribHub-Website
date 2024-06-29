@@ -14,7 +14,7 @@ import { useFormTriggerStore } from "@/store/form-trigger";
 import Link from "next/link";
 
 const Hero = () => {
-  const { setOpen, setSuccess } = useFormTriggerStore();
+  const { setOpen, setSuccess, setIndex } = useFormTriggerStore();
 
   const handleClick = () => {
     setOpen(true), setSuccess(false);
@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <Button
             onClick={() => {
-              setOpen(true), setSuccess(false);
+              setOpen(true), setSuccess(false), setIndex(0);
             }}
             className="hidden font-medium -tracking-[0.02em] sm:block"
           >
@@ -48,7 +48,9 @@ const Hero = () => {
           </Button>
           <Link
             href={"/join"}
-            onClick={() => setSuccess(false)}
+            onClick={() => {
+              setSuccess(false), setIndex(0);
+            }}
             className="block w-max rounded-xl bg-[#0065FF] px-4 py-[14.5px] font-medium -tracking-[0.02em] text-white shadow-[0px_8px_8px_0px_#0065FF1A,_0px_8px_24px_0px_#0065FF1A] hover:bg-[#0065FF]/90 sm:hidden"
           >
             Join waitlist
