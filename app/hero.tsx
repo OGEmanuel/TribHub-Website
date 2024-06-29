@@ -60,7 +60,6 @@ const Hero = () => {
             alt="Desktop Mockup Large"
             fill
             priority
-            placeholder="blur"
             className="rounded-[3rem]"
           />
         </div>
@@ -70,7 +69,6 @@ const Hero = () => {
             alt="Desktop Mockup Mid"
             fill
             priority
-            placeholder="blur"
             className="rounded-[2.5rem]"
           />
         </div>
@@ -81,7 +79,6 @@ const Hero = () => {
               alt="Desktop Mockup Small"
               fill
               priority
-              placeholder="blur"
               className="rounded-[1.5rem]"
             />
           </div>
@@ -91,7 +88,6 @@ const Hero = () => {
               alt="Mobile Mockup Small"
               fill
               priority
-              placeholder="blur"
               className="rounded-[2rem]"
             />
           </div>
@@ -102,7 +98,6 @@ const Hero = () => {
             alt="Mobile Mockup Large"
             fill
             priority
-            placeholder="blur"
             className="rounded-[4.3rem]"
           />
         </div>
@@ -112,7 +107,6 @@ const Hero = () => {
             alt="Mobile Mockup Mid"
             fill
             priority
-            placeholder="blur"
             className="rounded-[2.8rem]"
           />
         </div>

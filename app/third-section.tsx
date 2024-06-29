@@ -29,23 +29,16 @@ const ThirdSection = () => {
             <Image
               src={mobile}
               alt="mobile-banner"
-              placeholder="blur"
               className="rounded-t-[3rem]"
             />
           </div>
           <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[37.6875rem] -translate-x-[48.5%] sm:max-lg:block">
-            <Image
-              src={tab}
-              alt="tab-banner"
-              placeholder="blur"
-              className="rounded-t-[2.5rem]"
-            />
+            <Image src={tab} alt="tab-banner" className="rounded-t-[2.5rem]" />
           </div>
           <div className="absolute bottom-0 left-[50%] hidden w-full max-w-[62.5rem] -translate-x-[50%] lg:block">
             <Image
               src={desktopMockupBanner}
               alt="desktop-banner"
-              placeholder="blur"
               className="rounded-t-[3rem]"
             />
           </div>
