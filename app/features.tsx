@@ -127,24 +127,24 @@ const Features = () => {
                   </span>
                 </div>
               </div>
+              {/* <div className="w-full"> */}
               <div className="w-full">
-                <div className="w-full">
-                  <div className="flex h-[19.875rem] w-full items-end justify-end">
-                    <Image
-                      src={chart}
-                      alt="chart-icon"
-                      fill
-                      className="hidden sm:block"
-                    />
-                    <Image
-                      src={chartSmall}
-                      alt="chart-icon"
-                      fill
-                      className="translate-x-3 sm:hidden"
-                    />
-                  </div>
+                <div className="flex h-[19.875rem] w-full items-end justify-end overflow-hidden">
+                  <Image
+                    src={chart}
+                    alt="chart-icon"
+                    fill
+                    className="hidden sm:block"
+                  />
+                  <Image
+                    src={chartSmall}
+                    alt="chart-icon"
+                    fill
+                    className="!h-[22rem] translate-x-3 sm:hidden"
+                  />
                 </div>
               </div>
+              {/* </div> */}
               <div className="flex flex-col px-6 pb-6 max-[1000px]:max-w-[34.625rem] md:px-12 md:pb-12">
                 <h4
                   className={`z-20 text-lg font-medium leading-[29.76px] -tracking-[0.02em] text-[#2A313F] md:text-2xl md:text-[1.75rem] md:leading-[34.72px] ${GeistSans.className}`}

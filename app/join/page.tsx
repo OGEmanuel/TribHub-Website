@@ -18,7 +18,7 @@ import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import Lottie from "lottie-react";
-import animationData from "@/animation.json";
+import animationData from "@/mobile-animation.json";
 import { useFormTriggerStore } from "@/store/form-trigger";
 
 const FormSchema = z.object({
@@ -58,7 +58,7 @@ const Join = () => {
 
     timeoutRef.current = setTimeout(() => {
       setIndex(1);
-    }, 2000);
+    }, 3000);
 
     form.reset();
   }
