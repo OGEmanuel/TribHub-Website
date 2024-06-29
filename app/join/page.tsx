@@ -14,11 +14,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import Lottie from "lottie-react";
 import animationData from "@/animation.json";
+import { useFormTriggerStore } from "@/store/form-trigger";
 
 const FormSchema = z.object({
   firstname: z.string().min(2, {
@@ -32,7 +33,9 @@ const FormSchema = z.object({
 });
 
 const Join = () => {
-  const [success, setSuccess] = useState(false);
+    const { success, setSuccess } = useFormTriggerStore();
+  const [index, setIndex] = useState(0);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -45,15 +48,38 @@ const Join = () => {
   const { formState } = form;
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    setSuccess(!success);
+    if (!success) {
+      setSuccess(true);
+    }
+    // Clear any existing timeout before setting a new one
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = setTimeout(() => {
+      setIndex(1);
+    }, 2000);
+
+    form.reset();
   }
+
+  // Cleanup function to clear the timeout when the component unmounts
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="relative !h-screen !w-screen">
+    <section className="relative h-screen w-screen">
       {success && (
         <Lottie
           animationData={animationData}
           autoplay={true}
-          className="absolute z-[400] !h-full !w-full"
+          loop={false}
+          className="absolute h-full w-full"
         />
       )}
       <div className="max-h-[calc(100vh-4.25rem)] w-full">
@@ -118,7 +144,7 @@ const Join = () => {
           ) : (
             <Link
               href={"/"}
-              className="z-[500] mx-auto w-max rounded-xl bg-white px-4 py-[14.2px] font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white"
+              className={`mx-auto w-full rounded-xl bg-white px-4 py-[14.2px] text-center font-medium -tracking-[0.02em] text-[#555A66] shadow-none hover:bg-white ${index > 0 && "z-[400]"}`}
             >
               Close
             </Link>

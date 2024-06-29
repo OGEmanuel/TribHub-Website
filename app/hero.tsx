@@ -14,7 +14,7 @@ import { useFormTriggerStore } from "@/store/form-trigger";
 import Link from "next/link";
 
 const Hero = () => {
-  const { setOpen } = useFormTriggerStore();
+  const { setOpen, setSuccess } = useFormTriggerStore();
 
   return (
     <section className="relative pt-12 md:pt-[7.5rem]">
@@ -35,7 +35,9 @@ const Hero = () => {
             </p>
           </div>
           <Button
-            onClick={() => setOpen(true)}
+            onClick={() => {
+              setOpen(true), setSuccess(false);
+            }}
             className="hidden font-medium -tracking-[0.02em] sm:block"
           >
             Join waitlist
