@@ -34,8 +34,8 @@ const Hero = () => {
               Manage and Grow your communities seamlessly
             </h1>
             <p className="text-sm leading-6 -tracking-[0.02em] text-[#616670] md:text-base md:leading-7">
-              Join thousands of creators to seamlessly manage, monetize, and
-              protect your communities on WhatsApp, Telegram, and Facebook.
+              Seamlessly manage, monetize, and protect your communities on
+              WhatsApp, Telegram, and Facebook.
             </p>
           </div>
           <Button
