@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://trib-hub-website.vercel.app/",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Tribhub Open Graph Image",
